@@ -1,8 +1,8 @@
 pluginManagement {
 	repositories {
+		maven { url "https://maven.aliyun.com/repository/public" }
 		mavenCentral()
 		gradlePluginPortal()
-		maven { url "https://maven.aliyun.com/repository/public" }
 		maven { url "https://repo.spring.io/release" }
 	}
 }
@@ -36,6 +36,7 @@ include "spring-webmvc"
 include "spring-websocket"
 include "framework-bom"
 include "integration-tests"
+include "spring-learn"
 
 rootProject.name = "spring"
 rootProject.children.each {project ->
